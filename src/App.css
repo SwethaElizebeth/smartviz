@@ -1,0 +1,99 @@
+/* App.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #a89bb7, #f0b7b3); /* Lavender to pastel pink gradient */
+  padding-top: 40px;
+}
+
+
+
+/* Header Styling */
+.header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.box {
+  background-color: rgb(223, 203, 203);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 250px; /* Reduced width */
+  height: 220px; /* Reduced height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box.hovered {
+  background-color: #b19898;
+}
+
+/* Enlarged Image Styling */
+.box-image {
+  width: 120px; /* Increased width */
+  height: 120px; /* Increased height */
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.box-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.box-text p {
+  font-size: 15px;
+  color: #494747;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f4a261;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.bottom-boxes {
+  display: flex;
+  gap: 20px; /* Reduced spacing */
+  margin-top: 20px;
+}

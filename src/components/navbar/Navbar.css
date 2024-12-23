@@ -1,0 +1,50 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the navbar spans the full page width */
+    height: 60px; /* Reduce navbar height */
+    background: rgb(19, 14, 44); /* Navbar background color */
+    padding: 10px 20px; /* Reduce padding for better fit */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Include padding in the total width/height */
+}
+
+.navbar h1 {
+    font-size: 24px; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #f4a261; /* Branding color */
+    font-family: 'Dancing Script', cursive;
+    margin: 0; /* Remove any default margin */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Reduce spacing between menu items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Slightly smaller font */
+    padding: 5px 10px; /* Adjust padding for better fit */
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #6a5acd; /* Hover background effect */
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(106, 90, 205, 0.4);
+}
